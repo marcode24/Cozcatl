@@ -12128,6 +12128,11 @@ img.img-description {
   height: 15rem;
   margin: 5rem 0;
 }
+img.img-description-product {
+  height: 25rem;
+  margin: 1rem 0;
+  border-radius: 10%;
+}
 
 .heading-section .subheading {
   font-size: 18px;
@@ -12148,6 +12153,8 @@ img.img-description {
 .heading-section p.desc {
   font-size: 1.3rem;
 }
+
+
 @media (max-width: 767.98px) {
   .heading-section h2 {
     font-size: 28px;
