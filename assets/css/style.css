@@ -9342,7 +9342,7 @@ button.bg-dark:focus {
   }
   .pl-md-5,
   .px-md-5 {
-    padding-left: 3rem !important;
+    padding-left: 1rem !important;
   }
   .m-md-n1 {
     margin: -0.25rem !important;
@@ -11905,6 +11905,10 @@ textarea.form-control {
   }
 }
 
+.wrap-about {
+  padding: 1rem;
+}
+
 .wrap-about .year {
   font-size: 30px;
   color: #000000;
@@ -11921,7 +11925,7 @@ textarea.form-control {
 }
 
 .sort:hover {
-  cursor: pointer;
+  cursor: default;
 }
 
 .sort .img {
@@ -11975,12 +11979,12 @@ textarea.form-control {
 }
 
 .ftco-section {
-  padding: 6em 0;
+  padding: 1rem 0;
   position: relative;
 }
 @media (max-width: 767.98px) {
   .ftco-section {
-    padding: 6em 0;
+    padding: 1rem 0;
   }
 }
 
@@ -12120,6 +12124,11 @@ textarea.form-control {
   margin: 0 auto;
 }
 
+img.img-description {
+  height: 15rem;
+  margin: 5rem 0;
+}
+
 .heading-section .subheading {
   font-size: 18px;
   display: inline-block;
@@ -12134,6 +12143,10 @@ textarea.form-control {
 .heading-section h2 {
   font-size: 40px;
   font-weight: 700;
+}
+
+.heading-section p.desc {
+  font-size: 1.3rem;
 }
 @media (max-width: 767.98px) {
   .heading-section h2 {
