@@ -10762,7 +10762,7 @@ h5,
     display: none;
   }
 }
-.ftco-navbar-light .navbar-nav > .nav-item.cta > a {
+.ftco-navbar-light .navbar-nav > .nav-item.service-section > a {
   color: #fff;
   border: 1px solid var(--pink2);
   padding-top: 0.5rem;
@@ -10776,15 +10776,15 @@ h5,
   -ms-border-radius: 2px;
   border-radius: 2px;
 }
-.ftco-navbar-light .navbar-nav > .nav-item.cta > a span {
+.ftco-navbar-light .navbar-nav > .nav-item.service-section > a span {
   display: inline-block;
   color: #fff;
 }
-.ftco-navbar-light .navbar-nav > .nav-item.cta > a:hover {
+.ftco-navbar-light .navbar-nav > .nav-item.service-section > a:hover {
   background: var(--pink2);
   border: 1px solid var(--pink2);
 }
-.ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
+.ftco-navbar-light .navbar-nav > .nav-item.service-section.service-section-colored a {
   border: 1px solid #01d28e;
   background: #01d28e !important;
 }
@@ -10847,7 +10847,7 @@ h5,
 .ftco-navbar-light.scrolled .nav-item.active > a {
   color: var(--pink2) !important;
 }
-.ftco-navbar-light.scrolled .nav-item.cta > a {
+.ftco-navbar-light.scrolled .nav-item.service-section > a {
   color: #fff !important;
   background: var(--pink2);
   border: none !important;
@@ -10861,11 +10861,11 @@ h5,
   -ms-border-radius: 5px;
   border-radius: 5px;
 }
-.ftco-navbar-light.scrolled .nav-item.cta > a span {
+.ftco-navbar-light.scrolled .nav-item.service-section > a span {
   display: inline-block;
   color: #fff !important;
 }
-.ftco-navbar-light.scrolled .nav-item.cta.cta-colored span {
+.ftco-navbar-light.scrolled .nav-item.service-section.service-section-colored span {
   border-color: var(--pink2);
 }
 @media (max-width: 991.98px) {
@@ -11194,8 +11194,8 @@ h5,
   transition: all 0.2s ease-in-out;
 }
 .btn.btn-white.btn-outline-white:hover {
-  border: 1px solid var(--pink2) !important;
-  background: var(--pink2) !important;
+  border: 1px solid var(--pink) !important;
+  background: var(--pink) !important;
   color: #fff !important;
   transition: all 0.2s ease-in-out;
 }
@@ -11981,6 +11981,7 @@ textarea.form-control {
 .ftco-section {
   padding: 1rem 0;
   position: relative;
+  margin: 1.5rem 0;
 }
 @media (max-width: 767.98px) {
   .ftco-section {
@@ -12181,6 +12182,82 @@ img.img-description-product {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+section.service-section {
+  background-image: linear-gradient(rgba(2, 0, 9, 0.95), rgba(252, 0, 135, 0.1)), url('https://images.unsplash.com/photo-1589674316496-59782a067952?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+}
+.service-section {
+  position: relative;
+  z-index: 0;
+  background-position: center center !important;
+  position: relative;
+  background-attachment: fixed;
+}
+.service-section .img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+}
+.service-section .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 0 0 50px 0 rgba(110, 59, 89, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  z-index: 1;
+  margin-bottom: 2rem;
+  text-align: center;
+  cursor: default;
+}
+.service-section .icon-box::before {
+  content: '';
+  position: absolute;
+  background: transparent;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.service-section .icon-box:hover::before {
+  background: var(--pink);
+  top: 0;
+  border-radius: 0px;
+}
+.service-section .icon {
+  margin-bottom: 15px;
+}
+.service-section .icon i {
+  font-size: 48px;
+  line-height: 1;
+  color: var(--pink);
+  transition: all 0.2s ease-in-out;
+}
+.service-section .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: var(--white);
+}
+.service-section .description {
+  font-size: 1.4rem;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: var(--white);
+}
+.service-section .icon-box:hover .title a,
+.service-section .icon-box:hover .description {
+  color: var(--white);
+}
+.service-section .icon-box:hover .icon i {
+  color: var(--white);
 }
 
 .testimony-section {
