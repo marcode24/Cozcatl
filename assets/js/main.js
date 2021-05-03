@@ -60,9 +60,7 @@
 			$this.find('> a').attr('aria-expanded', false);
 			$this.find('.dropdown-menu').removeClass('show');
 	});
-	$('#dropdown04').on('show.bs.dropdown', function () {
-	  console.log('show');
-	});
+	$('#dropdown04').on('show.bs.dropdown', function () {});
 	var scrollWindow = function() {
 		$(window).scroll(function(){
 			var $w = $(this),
@@ -106,7 +104,6 @@
 				$('.number').each(function(){
 					var $this = $(this),
 						num = $this.data('number');
-						console.log(num);
 					$this.animateNumber(
 					  {
 					    number: num,
