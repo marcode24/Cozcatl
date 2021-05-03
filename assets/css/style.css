@@ -12001,7 +12001,7 @@ textarea.form-control {
   font-size: 16px;
   padding: 6em 0 0 0;
   background: #1a1a1a;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--white);
 }
 .ftco-footer .logo {
   text-transform: uppercase;
@@ -12013,8 +12013,7 @@ textarea.form-control {
   color: rgba(255, 255, 255, 0.3);
 }
 .ftco-footer .ftco-footer-widget h2 {
-  font-weight: normal;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--pink);
   margin-bottom: 30px;
   font-size: 20px;
   font-weight: 400;
@@ -12023,10 +12022,10 @@ textarea.form-control {
   margin-bottom: 10px;
 }
 .ftco-footer .ftco-footer-widget ul li a {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--white);
 }
 .ftco-footer .ftco-footer-widget ul li a span {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--white);
   font-size: 14px;
 }
 .ftco-footer .ftco-footer-widget .btn-primary {
@@ -12037,11 +12036,23 @@ textarea.form-control {
   background: #fff;
   border: 2px solid #fff !important;
 }
-.ftco-footer p {
-  color: rgba(255, 255, 255, 0.9);
+.ftco-footer p.phrase {
+  color: var(--white);
+  font-style: italic;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.ftco-footer p.phrase span {
+  color: var(--pink);
+  font-size: 1.7rem;
+}
+.ftco-footer p.autor {
+  color: var(--pink);
+  text-align: right;
+  font-weight: 600;
 }
 .ftco-footer a {
-  color: #fff;
+  color: var(--white);
 }
 .ftco-footer a:hover {
   color: var(--pink2);
@@ -12057,12 +12068,13 @@ textarea.form-control {
   width: 50px;
   display: block;
   float: left;
-  background: var(--pink2);
+  background: var(--pink);
   border-radius: 50%;
   position: relative;
 }
 .ftco-footer-social li a span {
   position: absolute;
+  color: var(--white);
   font-size: 18px;
   top: 50%;
   left: 50%;
@@ -12071,7 +12083,7 @@ textarea.form-control {
   transform: translate(-50%, -50%);
 }
 .ftco-footer-social li a:hover {
-  color: #fff;
+  cursor: pointer;
 }
 
 .footer-small-nav > li {
