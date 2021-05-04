@@ -10990,6 +10990,15 @@ h5,
   position: relative;
   z-index: 0;
 }
+.hero-wrap.hero-wrap-2.hero-about {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(2, 0, 9, 0.5), rgba(252, 0, 135, 0.15), rgba(252, 0, 135, 0.15)), url("https://images.unsplash.com/photo-1614674688937-407a267e4497?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=871&q=80");
+  position: relative;
+  z-index: 0;
+}
 .hero-wrap.hero-wrap-2 {
   height: 400px !important;
   position: relative;
@@ -12141,6 +12150,12 @@ img.img-description {
   height: 15rem;
   margin: 8rem 0;
 }
+img.img-history {
+  height: 35rem;
+  margin: 2rem 0;
+  border-radius: 2rem;
+  padding: 0.8rem;
+}
 img.img-description-product {
   height: 25rem;
   margin: 1rem 0;
@@ -12275,6 +12290,80 @@ section.service-section {
   color: var(--white);
 }
 .service-section .icon-box:hover .icon i {
+  color: var(--white);
+}
+
+.mision-vision-section {
+  position: relative;
+  z-index: 0;
+  background-position: center center !important;
+  position: relative;
+  background-attachment: fixed;
+}
+.mision-vision-section .img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+}
+.mision-vision-section .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 0 0 25px 0 rgba(110, 59, 89, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  z-index: 1;
+  margin-bottom: 2rem;
+  text-align: center;
+  cursor: default;
+}
+.mision-vision-section .icon-box::before {
+  content: '';
+  position: absolute;
+  background: transparent;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.mision-vision-section .icon-box:hover::before {
+  background: var(--pink);
+  top: 0;
+  border-radius: 0px;
+}
+.mision-vision-section .icon {
+  margin-bottom: 15px;
+}
+.mision-vision-section .icon i {
+  font-size: 48px;
+  line-height: 1;
+  color: var(--pink);
+  transition: all 0.2s ease-in-out;
+}
+.mision-vision-section .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: var(--black);
+}
+.mision-vision-section .description {
+  font-size: 1.4rem;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: var(--black);
+}
+.mision-vision-section .icon-box:hover .title ,
+.mision-vision-section .icon-box:hover .title a,
+.mision-vision-section .icon-box:hover .description {
+  color: var(--white);
+}
+.mision-vision-section .icon-box:hover .icon i {
   color: var(--white);
 }
 
@@ -12563,6 +12652,9 @@ section.service-section {
   }
   .blog-entry .mobile-image {
     display: block;
+  }
+  img.img-history {
+    display: none;
   }
 }
 .blog-entry .text {
