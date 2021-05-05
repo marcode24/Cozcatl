@@ -11169,6 +11169,7 @@ h5,
   background: var(--pink) !important;
   border: 1px solid var(--pink) !important;
   color: #fff !important;
+  border-radius: 0.5rem;
 }
 .btn.btn-primary:hover {
   border: 1px solid var(--pink);
@@ -11201,6 +11202,7 @@ h5,
   background: transparent !important;
   color: #fff !important;
   transition: all 0.2s ease-in-out;
+  border-radius: 0.5rem
 }
 .btn.btn-white.btn-outline-white:hover {
   border: 1px solid var(--pink) !important;
@@ -12616,6 +12618,7 @@ section.service-section {
   display: block;
   width: 100%;
   z-index: -1;
+  max-width: 13rem;
 }
 
 .blog-entry {
@@ -12652,6 +12655,7 @@ section.service-section {
   }
   .blog-entry .mobile-image {
     display: block;
+    max-width: 100%;
   }
   img.img-history {
     display: none;
