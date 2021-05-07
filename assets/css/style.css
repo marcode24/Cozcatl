@@ -11000,6 +11000,16 @@ h5,
   position: relative;
   z-index: 0;
 }
+.hero-wrap.hero-wrap-2.hero-product {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-image: linear-gradient(rgba(2, 0, 9, 0.5), rgba(252, 0, 135, 0.15), rgba(252, 0, 135, 0.15)), url("https://images.unsplash.com/photo-1583603306867-27d180666f89?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  position: relative;
+  z-index: 0;
+}
 .hero-wrap.hero-wrap-2 {
   height: 400px !important;
   position: relative;
